@@ -62,11 +62,14 @@ body {
 @media(max-width:767px) {
     .imagesBox {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(5, 1fr);
         width: 100%;
     }
 
-
+    .imagesBox .box {
+        max-height: 100px;
+    }
 
     .headInfo {
         width: 100%;
@@ -74,9 +77,18 @@ body {
     }
 
     .imagesBox .box .back img {
-        max-width: 100px;
-        max-height: 100px;
-        margin: auto;
+        max-width: 90%;
+        max-height: 90%;
+
+        margin-top: 4px !important;
+    }
+
+    .imagesBox .box .front::before {
+        left: 50%;
+        font-size: 100px !important;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

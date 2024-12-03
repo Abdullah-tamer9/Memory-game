@@ -14,7 +14,7 @@ document.querySelector(".control-buttons span").onclick = function () {
     document.querySelector(".control-buttons").remove();
 }
 
-let duration = 1000;
+let duration = 600;
 
 let imagesBox = document.querySelector(".imagesBox");
 
